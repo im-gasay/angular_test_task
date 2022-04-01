@@ -1,0 +1,9 @@
+<div class="follower-item">
+  <div class="follower-item__avatar">
+    <img [src]="follower.avatar_url" alt="">
+  </div>
+  <div class="follower-item__info">
+    <div class="follower-item__title">{{ follower.login }}</div>
+    <a class="follower-item__link" target="_blank" [href]="follower.html_url">{{ follower.html_url }}</a>
+  </div>
+</div>

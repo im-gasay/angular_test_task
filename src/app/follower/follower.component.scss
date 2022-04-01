@@ -1,0 +1,48 @@
+.follower-item {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 1.5rem;
+  align-items: center;
+
+
+  &__avatar {
+    img {
+      height: 80px;
+      width: 80px;
+      border-radius: 50rem;
+    }
+  }
+
+  &__info {
+    margin-left: .5rem;
+    padding-bottom: .3rem;
+  }
+
+  &__title {
+    font-size: 16px;
+    margin-bottom: .5rem;
+  }
+
+  &__link {
+    color: #1a73e8;
+    text-decoration: none;
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      right: 0;
+      width: 0;
+      bottom: -3px;
+      height: 2px;
+      background-color: #1a73e8;
+      transition: .2s ease-in-out
+    }
+
+    &:hover::after {
+      width: 100%;
+      right: unset;
+      left: 0;
+    }
+  }
+}
